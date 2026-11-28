@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Строка 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnSettingBack"
+            style="@style/InvButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:iconTint="@android:color/black"
+            app:icon="@drawable/back"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_main"
+            android:textStyle="bold"
+            android:text="@string/settings" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/darkThem" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/share"/>
+
+        <Button
+            android:id="@+id/btnShare"
+            app:iconSize="24dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:iconTint="@android:color/black"
+            style="@style/InvButtonStyle"
+            app:icon="@drawable/share"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/connectSupport"/>
+
+        <Button
+            android:id="@+id/btnSupport"
+            app:iconSize="24dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:iconTint="@android:color/black"
+            style="@style/InvButtonStyle"
+            app:icon="@drawable/support"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/userContract"/>
+
+        <Button
+            android:id="@+id/btnUserContract"
+            app:iconSize="24dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:iconTint="@android:color/black"
+            style="@style/InvButtonStyle"
+            app:icon="@drawable/next"/>
+
+    </LinearLayout>
+</LinearLayout>
